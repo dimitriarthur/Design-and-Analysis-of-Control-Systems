@@ -1,0 +1,8 @@
+out = sim('Ex_1_5_replication')
+
+plot(out.tout, out.simout.Data(:,1),out.tout,out.simout.Data(:,2),out.tout,out.simout.Data(:,3),out.tout,out.simout.Data(:,4), out.tout, )
+title('Output Concentration and Concentration Reference')
+xlabel('Time (s)')
+ylabel('Output c')
+legend({'T = 0','T = 0.015', 'T = 0.03'},'Location','northeast')
+

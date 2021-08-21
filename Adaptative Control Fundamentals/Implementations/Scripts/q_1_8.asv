@@ -1,0 +1,6 @@
+out = sim('simulink_q8')
+
+figure();
+plot(out.N.time, out.N.data)
+grid on;
+legend({'', 'yref'},'Location','northeast')
